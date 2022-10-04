@@ -31,7 +31,7 @@ func main() {
 	}
 
 	chunkRefs, err := index.GetChunkRefs(
-		context.Background(), "loki",
+		context.Background(), "canary",
 		model.TimeFromUnixNano(mustParse(*from).UnixNano()),
 		model.TimeFromUnixNano(mustParse(*to).UnixNano()),
 		nil,
